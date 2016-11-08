@@ -1,0 +1,21 @@
+Source: tmsu
+Section: utils
+Priority: optional
+Maintainer: Zaz Brown <zazbrown@zazbrown.com>
+Build-Depends: debhelper (>= 9), golang
+Standards-Version: 3.9.7
+Homepage: http://tmsu.org/
+Vcs-Browser: https://github.com/zaz/tmsu-debian
+Vcs-Git: https://github.com/zaz/tmsu-debian.git
+
+Package: tmsu
+Depends: ${misc:Depends}, ${shlibs:Depends}, fuse
+Architecture: any
+Description: Tag files, then access them through a nifty virtual filesystem.
+ Provides a simple command-line utility for tagging and a virtual filesystem to
+ give you a tag-based view of your files from any other program.
+ .
+ Does not alter your files in any way: they remain unchanged on disk, or on the
+ network, wherever your put them. TMSU maintains its own database and you simply
+ gain an additional view, which you can mount where you like, based upon the
+ tags you set up.
