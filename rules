@@ -1,4 +1,5 @@
 #!/usr/bin/make -f
+export GOPATH ?= /usr/lib/go:/usr/share/gocode
 
 %:
 	dh $@
